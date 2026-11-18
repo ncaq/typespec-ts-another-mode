@@ -5,13 +5,13 @@ on: push
 
 jobs:
   editorconfig:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
       - uses: editorconfig-checker/action-editorconfig-checker@v2
       - run: editorconfig-checker
   elisp:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
       - uses: purcell/setup-emacs@v8.0
